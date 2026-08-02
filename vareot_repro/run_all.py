@@ -18,6 +18,7 @@ from .claim1 import CASES, pointwise_variational_penalty, run_case, verify_resul
 from .claim2 import run_claim2
 from .claim3 import run_claim3
 from .claim4 import run_claim4
+from .claim5 import run_claim5
 
 
 ARTIFACTS = Path(".openresearch/artifacts")
@@ -146,14 +147,27 @@ def main() -> None:
         ARTIFACTS / "claim4/negative_control_output.json", claim4["negative_control"]
     )
 
+    claim5 = run_claim5()
+    write_json(ARTIFACTS / "claim5/raw_results.json", claim5)
+    write_json(
+        ARTIFACTS / "claim5/independent_checker_output.json",
+        claim5["independent_equation_checker"],
+    )
+    write_json(
+        ARTIFACTS / "claim5/negative_control_output.json", claim5["negative_control"]
+    )
+
     cumulative_runtime = time.perf_counter() - started
     statuses = {
         "claim_1": claim1["status"],
         "claim_2": claim2["status"],
         "claim_3": claim3["status"],
         "claim_4": claim4["status"],
+        "claim_5": claim5["status"],
     }
-    cumulative_pass = all(status == "VERIFIED" for status in statuses.values())
+    cumulative_pass = all(
+        status == "VERIFIED" for name, status in statuses.items() if name != "claim_5"
+    ) and bool(claim5["passed"])
     run_summary = {
         "system": system,
         "statuses": statuses,
@@ -172,6 +186,8 @@ def main() -> None:
     print(json.dumps(claim3, indent=2, sort_keys=True))
     print("=== CLAIM 4 RAW RESULTS ===")
     print(json.dumps(claim4, indent=2, sort_keys=True))
+    print("=== CLAIM 5 RAW RESULTS ===")
+    print(json.dumps(claim5, indent=2, sort_keys=True))
     print("=== EVAL ===")
     print(json.dumps(run_summary, indent=2, sort_keys=True))
     if not cumulative_pass:

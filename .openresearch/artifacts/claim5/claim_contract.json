@@ -1,0 +1,17 @@
+{
+  "claim_id": "claim5_algorithm_1",
+  "claim_text": "Algorithm 1 trains neural f_theta and xi_psi jointly by stochastic gradients of Equation 15 using only source samples, target samples, and independent Gaussian noise; it does not sample the current model distribution during training.",
+  "source": {
+    "url": "https://arxiv.org/pdf/2602.02241v2",
+    "pdf_sha256": "257689c36d4d589942660667e880211ab18c6de37d9c643adacd571beaf1949b",
+    "anchors": ["Section 3.2", "Algorithm 1", "Equation 15", "Table 1", "Appendix B.1"]
+  },
+  "assumptions": [
+    "iid samples are available from p0 and p1",
+    "iid standard Gaussian noise can be generated",
+    "both neural objectives are differentiable and finite after the paper's exponential and gradient clipping"
+  ],
+  "quantifiers": "Every training iteration described by Algorithm 1 uses those three sampling sources, computes Equation 15, and updates both parameter sets; no current-plan simulation is part of training.",
+  "profile_gate": "The diagnostic child preserves official tensor scale and measures exact CPU cost over 20 steps. It cannot produce a final VERIFIED verdict.",
+  "final_gate": "The descendant must complete 5000 official-notebook steps, improve a fixed held-out Equation 15 objective by more than 0.02, update both networks, pass an independent NumPy equation checker, and reject a detached-potential control."
+}
