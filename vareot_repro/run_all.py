@@ -19,6 +19,7 @@ from .claim2 import run_claim2
 from .claim3 import run_claim3
 from .claim4 import run_claim4
 from .claim5 import run_claim5
+from .release_gate import run_release_gate
 
 
 ARTIFACTS = Path(".openresearch/artifacts")
@@ -165,12 +166,16 @@ def main() -> None:
         "claim_4": claim4["status"],
         "claim_5": claim5["status"],
     }
-    cumulative_pass = all(
+    science_pass = all(
         status == "VERIFIED" for name, status in statuses.items() if name != "claim_5"
     ) and bool(claim5["passed"])
+    release_gate = run_release_gate({"statuses": statuses, "claim5": claim5})
+    cumulative_pass = science_pass and bool(release_gate["passed"])
     run_summary = {
         "system": system,
         "statuses": statuses,
+        "science_pass": science_pass,
+        "release_gate": release_gate,
         "cumulative_pass": cumulative_pass,
         "runtime_seconds": cumulative_runtime,
     }

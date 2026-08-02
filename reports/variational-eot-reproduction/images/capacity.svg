@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-label="ReLU approximation gap falls with joint capacity while fixed-tail control remains high">
+<rect width="900" height="430" fill="#fff"/><text x="55" y="52" font-family="system-ui,sans-serif" font-size="26" font-weight="700" fill="#172033">Actual ReLU capacity closes the continuous EOT gap</text>
+<line x1="100" y1="90" x2="100" y2="350" stroke="#94a3b8"/><line x1="100" y1="350" x2="840" y2="350" stroke="#94a3b8"/>
+<polyline fill="none" stroke="#7c3aed" stroke-width="5" points="170,162 360,242 550,302 740,337"/><g fill="#7c3aed"><circle cx="170" cy="162" r="7"/><circle cx="360" cy="242" r="7"/><circle cx="550" cy="302" r="7"/><circle cx="740" cy="337" r="7"/></g>
+<line x1="150" y1="112" x2="770" y2="112" stroke="#dc2626" stroke-width="4" stroke-dasharray="10 7"/><text x="510" y="101" font-family="system-ui,sans-serif" font-size="14" fill="#dc2626">fixed-tail control: 0.039799</text>
+<g font-family="system-ui,sans-serif" font-size="14" fill="#172033" text-anchor="middle"><text x="170" y="380">width 8</text><text x="360" y="380">16</text><text x="550" y="380">32</text><text x="740" y="380">64</text></g>
+<g font-family="system-ui,sans-serif" font-size="13" fill="#7c3aed" text-anchor="middle"><text x="170" y="150">0.02273</text><text x="360" y="230">0.00558</text><text x="550" y="290">0.00140</text><text x="740" y="325">0.000352</text></g>
+<text x="55" y="410" font-family="system-ui,sans-serif" font-size="13" fill="#64748b">Potential tail bound/Lipschitz capacity and normalizer width increase together; target mass audit = 1.0.</text></svg>

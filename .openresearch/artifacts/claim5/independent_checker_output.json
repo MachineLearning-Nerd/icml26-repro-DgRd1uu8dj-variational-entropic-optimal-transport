@@ -1,0 +1,11 @@
+{
+  "condition_scale": 14.810081313714228,
+  "float32_machine_epsilon": 1.1920928955078125e-7,
+  "numpy_float64_aggregation_loss": -0.21795199683324373,
+  "passed": true,
+  "roundoff_bound_8_epsilon_times_scale": 1.4123994172777394e-5,
+  "torch_float64_aggregation_loss": -0.21795199683324373,
+  "torch_numpy_float64_absolute_error": 0.0,
+  "torch_training_mixed_precision_loss": -0.21795134304479635,
+  "training_to_float64_absolute_error": 6.537884473800659e-7
+}

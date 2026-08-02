@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Variational Entropic Optimal Transport",
+  "emoji": "🎯",
+  "space_id": "DineshAI/DgRd1uu8dj",
+  "paper": "arXiv:2602.02241",
+  "tags": ["icml2026-repro", "paper-DgRd1uu8dj"],
+  "updated_at": "2026-08-02T00:00:00+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Variational EOT reproduction",
+    "file": "pages/index.md",
+    "children": [
+      {"slug": "current", "title": "Current verification", "file": "pages/current/page.md", "children": [
+        {"slug": "claim-1", "title": "Claim 1 — VERIFIED", "file": "pages/claim-1/page.md", "children": []},
+        {"slug": "claim-2", "title": "Claim 2 — VERIFIED", "file": "pages/claim-2/page.md", "children": []},
+        {"slug": "claim-3", "title": "Claim 3 — VERIFIED", "file": "pages/claim-3/page.md", "children": []},
+        {"slug": "claim-4", "title": "Claim 4 — VERIFIED", "file": "pages/claim-4/page.md", "children": []},
+        {"slug": "claim-5", "title": "Claim 5 — VERIFIED", "file": "pages/claim-5/page.md", "children": []},
+        {"slug": "source-audit", "title": "Source and version audit", "file": "pages/source-audit/page.md", "children": []},
+        {"slug": "release-audit", "title": "Visibility and release audit", "file": "pages/release-audit/page.md", "children": []}
+      ]},
+      {"slug": "historical", "title": "Historical rejected baseline", "file": "pages/historical/page.md", "children": [
+        {"slug": "overview", "title": "Historical rejected baseline — Overview", "file": "pages/overview/page.md", "children": []},
+        {"slug": "claims", "title": "Historical rejected baseline — Claims", "file": "pages/claims/page.md", "children": []},
+        {"slug": "evidence", "title": "Historical rejected baseline — Evidence", "file": "pages/evidence/page.md", "children": []},
+        {"slug": "verification-run", "title": "Historical rejected baseline — Verification run", "file": "pages/verification-run/page.md", "children": []},
+        {"slug": "conclusion", "title": "Historical rejected baseline — Conclusion", "file": "pages/conclusion/page.md", "children": []}
+      ]}
+    ]
+  },
+  "agent_view_tokens": 8000,
+  "revision": "release-candidate"
+}

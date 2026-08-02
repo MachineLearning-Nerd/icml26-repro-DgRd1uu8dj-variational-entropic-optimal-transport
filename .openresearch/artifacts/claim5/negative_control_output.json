@@ -1,0 +1,7 @@
+{
+  "change": "detach every potential output before Equation 15",
+  "expected": "joint-gradient audit rejects the zero potential gradient",
+  "normalizer_gradient_norm": 0.01394092385024298,
+  "potential_gradient_norm": 0.0,
+  "rejected": true
+}

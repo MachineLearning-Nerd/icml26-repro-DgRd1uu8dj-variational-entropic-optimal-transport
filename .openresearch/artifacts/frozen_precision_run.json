@@ -1,0 +1,79 @@
+{
+  "evidence_run_id": "0f29450d-5b73-4214-ae3e-10d47608a377",
+  "evidence_git_sha": "7ee3d8e5e21f4f59fd5025e3c2df8f80f584db86",
+  "fixed_command": "uv sync --frozen && .venv/bin/python -m vareot_repro.run_all",
+  "backend": "hf",
+  "selected_flavor": "cpu-upgrade",
+  "estimated_cores_required": 32,
+  "actual_cpu_affinity_count": 64,
+  "torch_threads": 32,
+  "cuda_available": false,
+  "orx_wall_duration": "2h16m",
+  "scientific_runtime_seconds": 5750.050501372001,
+  "statuses": {
+    "claim_1": "VERIFIED",
+    "claim_2": "VERIFIED",
+    "claim_3": "VERIFIED",
+    "claim_4": "VERIFIED",
+    "claim_5": "VERIFIED"
+  },
+  "claim_1": {
+    "scope": "continuous one-dimensional Gaussian EOT plus a general symbolic variational certificate",
+    "max_primal_semidual_error": 4.440892098500626e-16,
+    "max_variational_error": 2.220446049250313e-16,
+    "max_adaptive_quadrature_error": 4.440892098500626e-16,
+    "negative_control_exit_code": 1
+  },
+  "claim_2": {
+    "scope": "non-optimal potentials and non-normalized finite measures on two continuous Gaussian EOT instances",
+    "max_gap_identity_error": 5.828670879282072e-16,
+    "max_independent_checker_error": 0.0,
+    "ordinary_kl_control_errors": [0.26563711076027896, 0.19831479832594923],
+    "negative_control_rejected": true
+  },
+  "claim_3": {
+    "scope": "exact full 1-Lipschitz class on [0,1], 128 seeds, plus analytical v1 proof reconstruction",
+    "sample_sizes": [64, 128, 256, 512, 1024, 2048, 4096],
+    "mean_exact_w1": [0.04047572638624694, 0.028515396470259666, 0.019632413989582303, 0.014556656139663372, 0.009445910954406299, 0.007053976536525721, 0.005083592533365974],
+    "standard_error": [0.001604808386701131, 0.001110353990090704, 0.0007853649552924386, 0.0005501316190759208, 0.0003774083232168075, 0.00027831834504328545, 0.00018921408908361654],
+    "median_per_seed_loglog_slope": -0.5111585503734187,
+    "slope_5_95_percentiles": [-0.694634744344053, -0.2735936432798274],
+    "non_iid_control_slope": 1.7893076816262386e-15,
+    "negative_control_rejected": true
+  },
+  "claim_4": {
+    "scope": "continuous compact EOT and explicit capacity-growing ReLU networks",
+    "capacities": [8, 16, 32, 64],
+    "approximation_gaps": [0.022731969838272567, 0.00557512647755691, 0.001404038825237916, 0.0003522071774274965],
+    "target_marginal_normalization": 1.0,
+    "max_network_realization_error": 0.0,
+    "fixed_tail_control_gap": 0.0397988656519601,
+    "negative_control_rejected": true
+  },
+  "claim_5": {
+    "scope": "official continuous Swiss-roll Algorithm 1 executable configuration",
+    "steps": 5000,
+    "batch_size": 256,
+    "monte_carlo_k": 256,
+    "architecture": "two independent 2->256->256->256->1 SiLU MLPs",
+    "heldout_objective_initial": -0.9965578028615594,
+    "heldout_objective_final": 0.21795134304479635,
+    "heldout_objective_improvement": 1.2145091459063557,
+    "potential_first_gradient_norm": 0.3003854689563279,
+    "normalizer_first_gradient_norm": 0.014266153947860566,
+    "potential_update_norm": 17.96524429321289,
+    "normalizer_update_norm": 8.71017074584961,
+    "source_samples": 1280000,
+    "target_samples": 1280000,
+    "gaussian_noise_samples": 327680000,
+    "model_distribution_samples": 0,
+    "torch_numpy_float64_error": 0.0,
+    "mixed_precision_error": 6.537884473800659e-7,
+    "a_priori_roundoff_bound": 1.4123994172777394e-5,
+    "detached_potential_gradient_norm": 0.0,
+    "detached_normalizer_gradient_norm": 0.01394092385024298,
+    "negative_control_rejected": true,
+    "training_runtime_seconds": 5719.526885461999,
+    "seconds_per_step": 1.1439053770923997
+  }
+}

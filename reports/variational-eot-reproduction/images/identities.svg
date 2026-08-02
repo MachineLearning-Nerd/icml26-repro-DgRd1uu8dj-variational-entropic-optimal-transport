@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-label="Theorem identity errors near machine precision and negative controls far larger">
+<rect width="900" height="430" fill="#ffffff"/><text x="55" y="52" font-family="system-ui,sans-serif" font-size="26" font-weight="700" fill="#172033">Exact identities separate cleanly from wrong controls</text>
+<line x1="110" y1="95" x2="110" y2="350" stroke="#94a3b8"/><line x1="110" y1="350" x2="845" y2="350" stroke="#94a3b8"/>
+<g font-family="system-ui,sans-serif" font-size="13" fill="#64748b"><text x="42" y="354">1e−16</text><text x="42" y="294">1e−12</text><text x="42" y="234">1e−8</text><text x="42" y="174">1e−4</text><text x="55" y="114">1</text></g>
+<g fill="#16a34a"><rect x="180" y="342" width="95" height="8"/><rect x="360" y="338" width="95" height="12"/></g><g fill="#dc2626"><rect x="540" y="112" width="95" height="238"/><rect x="720" y="121" width="95" height="229"/></g>
+<g font-family="system-ui,sans-serif" font-size="14" text-anchor="middle" fill="#172033"><text x="227" y="380">C1 dual</text><text x="407" y="380">C2 KL gap</text><text x="587" y="380">C1 wrong f</text><text x="767" y="380">C2 ordinary KL</text></g>
+<g font-family="system-ui,sans-serif" font-size="13" text-anchor="middle"><text x="227" y="330" fill="#15803d">4.44e−16</text><text x="407" y="326" fill="#15803d">5.83e−16</text><text x="587" y="102" fill="#b91c1c">rejected</text><text x="767" y="111" fill="#b91c1c">0.198–0.266</text></g>
+<text x="55" y="414" font-family="system-ui,sans-serif" font-size="13" fill="#64748b">Log-scale schematic; exact values are in frozen_precision_run.json.</text></svg>
