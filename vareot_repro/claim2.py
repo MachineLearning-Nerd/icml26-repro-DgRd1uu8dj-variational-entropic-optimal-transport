@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from math import exp, log
+from math import exp, log, pi, sqrt
 
 import numpy as np
 from scipy.integrate import quad
@@ -78,7 +78,10 @@ def run_case(case: GaussianCase) -> dict[str, float]:
         limit=250,
     )[0]
     mass_quad = quad(
-        lambda x: exp(-(d0 + d1 * x)) * normal_pdf(x, case.mean0, case.std0),
+        lambda x: exp(
+            -(d0 + d1 * x) - 0.5 * ((x - case.mean0) / case.std0) ** 2
+        )
+        / (case.std0 * sqrt(2 * pi)),
         -np.inf,
         np.inf,
         epsabs=1e-11,
