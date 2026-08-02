@@ -28,7 +28,7 @@ The reviewer could locate the current verifier without being told a hidden path.
 
 Judged revision `7b762ad0a9b67bef76040075929c4cbb3eb8f3b3` contains 17 protected files. The candidate upload is additive: it does not delete any path. The five historical claim/evidence pages remain byte-identical at their original paths and appear only under navigation titled exactly **Historical rejected baseline**. Because the current `README.md`, `logbook.json`, and `pages/index.md` must change to expose the new verifier, their exact judged bytes are additionally archived under `historical/judged-7b762ad/`. The original 17-file hash list is `historical/judged-7b762ad/MANIFEST.sha256`.
 
-The final candidate download must report old-path inclusion `17/17` before upload and again after publication. Binary Trackio assets are untouched.
+A fresh-clone prepublication audit reported old-path inclusion `17/17`: the upload contains no delete operation, 14 protected paths are untouched, and the three replaced evaluator entrypoints are archived byte-for-byte. Binary Trackio assets are untouched. The same `17/17` check is required again after publication.
 
 ## Publication controls
 
