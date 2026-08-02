@@ -7,7 +7,7 @@ from math import exp, log
 import numpy as np
 from scipy.integrate import quad
 
-from .claim1 import CASES, GaussianCase, log_partition, normal_pdf, optimal_parameters
+from .claim1 import CASES, GaussianCase, normal_pdf, optimal_parameters
 
 
 def semidual(case: GaussianCase, params: dict[str, float]) -> float:

@@ -77,7 +77,7 @@ def run_claim3() -> dict[str, object]:
             "n^-1/2 is no larger than n^-1/(D+1) for D>=1 and n>=1",
         ],
         "exponent_checks": exponent_checks,
-        "calibrated_corrobation": {
+        "calibrated_corroboration": {
             "class": "all 1-Lipschitz functions on [0,1], anchored modulo constants",
             "exact_duality": "sup empirical gap equals W1(Uniform[0,1], empirical measure)",
             "sample_sizes": sample_sizes.tolist(),

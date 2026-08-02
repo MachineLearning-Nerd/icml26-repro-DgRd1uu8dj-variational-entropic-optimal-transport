@@ -124,7 +124,7 @@ def main() -> None:
         {
             "proof_chain": claim3["proof_chain"],
             "exponent_checks": claim3["exponent_checks"],
-            "calibrated_corrobation": claim3["calibrated_corrobation"],
+            "calibrated_corroboration": claim3["calibrated_corroboration"],
             "passed": claim3["passed"],
         },
     )
