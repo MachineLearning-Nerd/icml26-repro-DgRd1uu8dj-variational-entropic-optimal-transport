@@ -1,0 +1,17 @@
+{
+  "run_id": "a58f97fb-3066-43ef-9e0a-16693080fa75",
+  "git_sha": "efde861",
+  "status": "BLOCKED",
+  "backend": "hf",
+  "flavor": "cpu-upgrade",
+  "estimated_cores": 32,
+  "actual_cpu_affinity": 64,
+  "torch_threads": 32,
+  "cuda_available": false,
+  "science_runtime_seconds": 14066.313840486808,
+  "algorithm1_training_runtime_seconds": 14030.297232253011,
+  "science_pass": true,
+  "claim_statuses": {"claim_1":"VERIFIED","claim_2":"VERIFIED","claim_3":"VERIFIED","claim_4":"VERIFIED","claim_5":"VERIFIED"},
+  "release_gate_failures": ["marimo 0.15.2 has no check command","secret scanner matched its own marker literal"],
+  "repair_policy": "Preserve this frozen result; validate the notebook by same-version executable HTML export on a child and construct secret markers without self-matching."
+}

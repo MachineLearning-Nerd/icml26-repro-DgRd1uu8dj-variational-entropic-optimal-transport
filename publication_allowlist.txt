@@ -29,6 +29,7 @@ vareot_repro/negative_control.py
 vareot_repro/release_gate.py
 vareot_repro/run_all.py
 .openresearch/artifacts/frozen_precision_run.json
+.openresearch/artifacts/release_candidate_failure.json
 .openresearch/artifacts/claim1/EVAL.md
 .openresearch/artifacts/claim1/baseline_run.json
 .openresearch/artifacts/claim1/claim_contract.json

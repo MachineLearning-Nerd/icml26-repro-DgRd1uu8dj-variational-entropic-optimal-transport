@@ -38,4 +38,5 @@ The final candidate download must report old-path inclusion `17/17` before uploa
 - SHA-256 values: `MANIFEST.sha256` (the manifest intentionally excludes its own self-referential hash).
 - Secret scan: every allowlisted text file; token values are never printed.
 - Scientific source: commit `7ee3d8e5e21f4f59fd5025e3c2df8f80f584db86`, run `0f29450d-5b73-4214-ae3e-10d47608a377`.
-- Publication occurs only after the release-candidate child reruns the cumulative scientific suite, frozen-evidence comparison, `marimo check`, visibility checks, controls, and secret scan on HF `cpu-upgrade`.
+- Pinned `marimo==0.15.2` does not expose the later `marimo check` subcommand. The exact requested command was executed on HF and returned the documented “No such command” exit `2`. The same pinned release is therefore required to execute every notebook cell via `marimo export html --no-sandbox`; any cell error makes that command nonzero. Both results are printed in the release evidence, and the lockfile is unchanged.
+- Publication occurs only after the corrective child reruns the cumulative scientific suite, frozen-evidence comparison, exact marimo-command audit, executable notebook export, visibility checks, controls, and secret scan on HF `cpu-upgrade`.

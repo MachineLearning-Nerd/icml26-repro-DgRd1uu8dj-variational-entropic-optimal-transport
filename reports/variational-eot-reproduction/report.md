@@ -78,7 +78,7 @@ loss.backward()          # both theta and psi
 optimizer.step()
 ```
 
-The frozen environment is Python 3.12, NumPy 2.3.2, SciPy 1.16.1, Torch 2.8.0+cpu, and marimo 0.15.2, completely resolved by `uv.lock`.
+The frozen environment is Python 3.12, NumPy 2.3.2, SciPy 1.16.1, Torch 2.8.0+cpu, and marimo 0.15.2, completely resolved by `uv.lock`. That pinned marimo predates the `marimo check` subcommand: the requested command and its unsupported-command exit are recorded, while notebook execution is validated by the same version's `marimo export html --no-sandbox`, which exits nonzero on cell errors.
 
 ## Experiment tree and commands
 
