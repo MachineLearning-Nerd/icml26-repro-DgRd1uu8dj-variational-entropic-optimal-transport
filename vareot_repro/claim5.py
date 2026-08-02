@@ -271,7 +271,7 @@ def run_claim5() -> dict[str, object]:
     normalizer_update = float(
         torch.linalg.vector_norm(parameter_vector(normalizer) - initial_normalizer)
     )
-    structural_pass = (
+    structural_pass = bool(
         first_gradient_norms["potential"] > 0
         and first_gradient_norms["normalizer"] > 0
         and potential_update > 0
@@ -286,8 +286,8 @@ def run_claim5() -> dict[str, object]:
         and np.isfinite(final_loss)
     )
     improvement = initial_loss - final_loss
-    final_pass = structural_pass and improvement > 0.02
-    passed = structural_pass if config.profile_only else final_pass
+    final_pass = bool(structural_pass and improvement > 0.02)
+    passed = bool(structural_pass if config.profile_only else final_pass)
     return {
         "claim": "Algorithm 1 simulation-free joint neural training",
         "status": "PROFILE_ONLY"
