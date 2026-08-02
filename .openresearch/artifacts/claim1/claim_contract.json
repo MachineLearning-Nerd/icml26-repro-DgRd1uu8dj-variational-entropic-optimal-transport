@@ -1,0 +1,25 @@
+{
+  "claim_id": "claim1_theorem_3_2",
+  "claim_text": "EOT_epsilon(p0,p1) = sup_f L(f) = sup_{f,xi} L(f,xi).",
+  "source": {
+    "url": "https://ar5iv.labs.arxiv.org/html/2602.02241",
+    "retrieved_utc": "2026-08-02T03:20:39Z",
+    "sha256": "50f2161eea8428c71e455b7412cd020157a3450f7c60dd6271a8bfe6c6f08261",
+    "anchor": "#S3.Thmtheorem2 and Equation 13"
+  },
+  "assumptions": [
+    "epsilon > 0",
+    "p0 and p1 are absolutely continuous Borel probability measures on R^D",
+    "f is admissible for the weak dual and xi is integrable",
+    "all displayed expectations and partition functions are finite"
+  ],
+  "quantifiers": "For every admissible EOT instance, the two suprema equal the EOT value; for each fixed admissible f, xi_f makes the pointwise variational bound tight.",
+  "machine_checks": [
+    "symbolic pointwise gap is epsilon E[delta + exp(-delta) - 1] and is nonnegative",
+    "continuous Gaussian primal, semidual, and variational values agree",
+    "the recovered conditional has exactly the target marginal",
+    "adaptive quadrature independently checks partition and semidual values",
+    "a deliberately non-optimal potential is rejected"
+  ],
+  "failure_policy": "The verifier exits nonzero if any identity, marginal, independent-checker, or negative-control condition fails."
+}
