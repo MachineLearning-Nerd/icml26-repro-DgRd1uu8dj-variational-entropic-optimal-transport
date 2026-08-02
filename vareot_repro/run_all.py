@@ -32,7 +32,7 @@ def write_json(path: Path, data: object) -> None:
 def cpu_info() -> dict[str, object]:
     affinity = len(os.sched_getaffinity(0)) if hasattr(os, "sched_getaffinity") else None
     return {
-        "estimated_cores_required": 4,
+        "estimated_cores_required": 32,
         "selected_backend": "hf",
         "selected_flavor": "cpu-upgrade",
         "os_cpu_count": os.cpu_count(),

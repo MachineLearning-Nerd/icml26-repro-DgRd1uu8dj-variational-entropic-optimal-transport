@@ -17,7 +17,7 @@ class AlgorithmConfig:
     epsilon: float = 1.0
     batch_size: int = 256
     monte_carlo_k: int = 256
-    steps: int = 20
+    steps: int = 5000
     hidden_width: int = 256
     learning_rate: float = 3e-4
     beta1: float = 0.7
@@ -27,7 +27,7 @@ class AlgorithmConfig:
     exponential_clip: float = 20.0
     gradient_clip: float = 1.0
     seed: int = 42
-    profile_only: bool = True
+    profile_only: bool = False
 
 
 class MLP(nn.Module):
@@ -334,5 +334,5 @@ def run_claim5() -> dict[str, object]:
         "structural_pass": structural_pass,
         "final_performance_pass": final_pass,
         "passed": passed,
-        "deviation": "This profiling node uses 20 of the official notebook's 5000 steps. Batch, K, architecture, distributions, optimizer, clipping, and EMA match that notebook. It is not final Claim 5 evidence.",
+        "deviation": "This run matches the official Swiss-roll notebook's 5000-step executable schedule. Appendix B.1 instead says 10000 steps at learning rate 1e-4; that source inconsistency is recorded in the audit.",
     }
