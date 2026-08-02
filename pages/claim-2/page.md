@@ -8,6 +8,6 @@ The negative control removes the finite-measure mass correction. It misses the i
 
 - [Executable and independent checker](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/vareot_repro/claim2.py)
 - [Claim contract](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/.openresearch/artifacts/claim2/claim_contract.json)
-- [Raw run evidence](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/frozen_precision_run.json)
+- [Raw results](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim2/raw_results.json) · [checker output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim2/independent_checker_output.json) · [control output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim2/negative_control_output.json)
 
 **Limit.** The analytical Radon–Nikodym derivation is general; numerical corroboration is scoped to two continuous Gaussian instances. Confidence: **HIGH**.

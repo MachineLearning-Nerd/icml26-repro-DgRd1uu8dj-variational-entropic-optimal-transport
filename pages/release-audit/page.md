@@ -8,8 +8,8 @@ The reviewer was restricted to the candidate artifact and began at `README.md`, 
 2. `pages/current/page.md`
 3. `pages/claim-1/page.md` through `pages/claim-5/page.md`
 4. `pages/source-audit/page.md`
-5. `.openresearch/artifacts/frozen_precision_run.json`
-6. `.openresearch/artifacts/claim5/training_trace.csv`, `independent_checker_output.json`, and `negative_control_output.json`
+5. each claim's `raw_results.json`, `independent_checker_output.json`, and `negative_control_output.json`
+6. `.openresearch/artifacts/frozen_precision_run.json` and `.openresearch/artifacts/claim5/training_trace.csv`
 7. each linked `claim_contract.json`, `vareot_repro/claim*.py`, `run_all.py`, `pyproject.toml`, and `uv.lock`
 8. `reports/variational-eot-reproduction/report.md` and its five SVG figures
 9. this release-audit page and `publication_allowlist.txt`

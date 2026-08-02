@@ -10,7 +10,7 @@ An independent NumPy float64 recombination exactly matched Torch float64 (`0` er
 
 - [Algorithm 1 implementation](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/vareot_repro/claim5.py)
 - [Claim contract](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/.openresearch/artifacts/claim5/claim_contract.json)
-- [Raw summary](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/frozen_precision_run.json)
+- [Raw results](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim5/raw_results.json)
 - [Training trace CSV](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim5/training_trace.csv)
 - [Independent checker](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/.openresearch/artifacts/claim5/independent_checker_output.json) · [negative control](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/.openresearch/artifacts/claim5/negative_control_output.json)
 

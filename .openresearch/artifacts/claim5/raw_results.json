@@ -1,0 +1,21 @@
+{
+  "evidence_run_id": "0f29450d-5b73-4214-ae3e-10d47608a377",
+  "evidence_git_sha": "7ee3d8e5e21f4f59fd5025e3c2df8f80f584db86",
+  "status": "VERIFIED",
+  "config": {"dimension":2,"epsilon":1.0,"batch_size":256,"monte_carlo_k":256,"steps":5000,"hidden_width":256,"learning_rate":0.0003,"beta1":0.7,"beta2":0.8,"weight_decay":0.0001,"ema_momentum":0.999,"exponential_clip":20.0,"gradient_clip":1.0,"seed":42},
+  "architecture": "two independent 2->256->256->256->1 SiLU MLPs",
+  "source_distribution": "two-dimensional standard Gaussian",
+  "target_distribution": "continuous noisy Swiss roll, matching the official notebook sampler",
+  "initial_heldout_maximized_objective": -0.9965578028615594,
+  "final_heldout_maximized_objective": 0.21795134304479635,
+  "heldout_objective_improvement": 1.2145091459063557,
+  "first_step_gradient_norms": {"potential":0.3003854689563279,"normalizer":0.014266153947860566},
+  "parameter_update_norms": {"potential":17.96524429321289,"normalizer":8.71017074584961},
+  "training_sample_audit": {"source_samples":1280000,"target_samples":1280000,"independent_gaussian_noise_samples":327680000,"model_distribution_samples":0,"simulation_free":true},
+  "training_runtime_seconds": 5719.526885461999,
+  "seconds_per_step": 1.1439053770923997,
+  "trace_file": "training_trace.csv",
+  "independent_checker_file": "independent_checker_output.json",
+  "negative_control_file": "negative_control_output.json",
+  "deviation": "The run matches the official notebook's 5000 steps at 3e-4; Appendix B.1 instead says 10000 steps at 1e-4."
+}

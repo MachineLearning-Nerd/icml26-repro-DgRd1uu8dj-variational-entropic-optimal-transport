@@ -1,0 +1,11 @@
+{
+  "evidence_run_id": "0f29450d-5b73-4214-ae3e-10d47608a377",
+  "status": "VERIFIED",
+  "scope": "continuous one-dimensional Gaussian distributions; exact quadratic optimal potential",
+  "cases": [
+    {"name":"shift_and_scale","epsilon":0.7,"mean0":-0.7,"std0":0.8,"mean1":1.2,"std1":1.35,"primal_eot":1.3109239627314626,"semidual":1.310923962731463,"variational":1.310923962731463,"primal_semidual_abs_error":4.440892098500626e-16,"semidual_variational_abs_error":0.0,"adaptive_quadrature_abs_error":4.440892098500626e-16,"target_mean_abs_error":2.220446049250313e-16,"target_variance_abs_error":0.0},
+    {"name":"reverse_scale","epsilon":1.1,"mean0":0.5,"std0":1.6,"mean1":-0.4,"std1":0.65,"primal_eot":0.4307262849673188,"semidual":0.4307262849673188,"variational":0.430726284967319,"primal_semidual_abs_error":0.0,"semidual_variational_abs_error":2.220446049250313e-16,"adaptive_quadrature_abs_error":1.1102230246251565e-16,"target_mean_abs_error":5.551115123125783e-17,"target_variance_abs_error":5.551115123125783e-17}
+  ],
+  "symbolic_identity": "L(f)-L(f,xi_f+delta)=epsilon*E[delta+exp(-delta)-1]",
+  "symbolic_certificate_passed": true
+}

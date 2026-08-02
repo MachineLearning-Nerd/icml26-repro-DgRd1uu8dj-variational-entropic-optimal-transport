@@ -1,0 +1,15 @@
+{
+  "evidence_run_id": "0f29450d-5b73-4214-ae3e-10d47608a377",
+  "status": "VERIFIED",
+  "claim": "Theorem 3.5 in arXiv v1 / cached ar5iv",
+  "class": "all anchored 1-Lipschitz functions on [0,1]",
+  "exact_duality": "empirical-process supremum equals W1(Uniform[0,1], empirical measure)",
+  "sample_sizes": [64,128,256,512,1024,2048,4096],
+  "seeds": 128,
+  "mean_exact_w1": [0.04047572638624694,0.028515396470259666,0.019632413989582303,0.014556656139663372,0.009445910954406299,0.007053976536525721,0.005083592533365974],
+  "standard_error": [0.001604808386701131,0.001110353990090704,0.0007853649552924386,0.0005501316190759208,0.0003774083232168075,0.00027831834504328545,0.00018921408908361654],
+  "median_per_seed_loglog_slope": -0.5111585503734187,
+  "per_seed_slope_5_95_percentiles": [-0.694634744344053,-0.2735936432798274],
+  "exponent_implication_checked_dimensions": [1,2,4,8,16],
+  "exponent_implication_passed": true
+}

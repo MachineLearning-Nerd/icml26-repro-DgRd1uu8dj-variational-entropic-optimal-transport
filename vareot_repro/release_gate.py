@@ -76,6 +76,14 @@ def run_release_gate(generated: dict[str, object]) -> dict[str, object]:
         "publication_allowlist.txt",
         "MANIFEST.sha256",
     ]
+    for claim in range(1, 6):
+        required_paths.extend(
+            [
+                f".openresearch/artifacts/claim{claim}/raw_results.json",
+                f".openresearch/artifacts/claim{claim}/independent_checker_output.json",
+                f".openresearch/artifacts/claim{claim}/negative_control_output.json",
+            ]
+        )
     for relative in required_paths:
         require((ROOT / relative).is_file(), f"missing evaluator file: {relative}", failures)
 

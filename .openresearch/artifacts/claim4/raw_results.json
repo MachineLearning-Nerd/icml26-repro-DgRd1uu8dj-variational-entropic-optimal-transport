@@ -1,0 +1,12 @@
+{
+  "evidence_run_id": "0f29450d-5b73-4214-ae3e-10d47608a377",
+  "status": "VERIFIED",
+  "claim": "Theorem 3.7 in arXiv v1 / cached ar5iv",
+  "instance": {"p0":"Uniform[-1,1]","p1":"compact marginal induced by f*=0 on [-1,1]","epsilon":0.5,"target_marginal_normalization":1.0,"L_star":-0.11496906338604114},
+  "capacity_results": [
+    {"tail_bound_M":2.0,"tail_lipschitz_L":8.0,"xi_relu_width":8,"variational_objective":-0.1377010332243137,"approximation_gap":0.022731969838272567,"network_realization_max_error":0.0},
+    {"tail_bound_M":4.0,"tail_lipschitz_L":32.0,"xi_relu_width":16,"variational_objective":-0.12054418986359805,"approximation_gap":0.00557512647755691,"network_realization_max_error":0.0},
+    {"tail_bound_M":6.0,"tail_lipschitz_L":128.0,"xi_relu_width":32,"variational_objective":-0.11637310221127906,"approximation_gap":0.001404038825237916,"network_realization_max_error":0.0},
+    {"tail_bound_M":8.0,"tail_lipschitz_L":512.0,"xi_relu_width":64,"variational_objective":-0.11532127056346864,"approximation_gap":0.0003522071774274965,"network_realization_max_error":0.0}
+  ]
+}

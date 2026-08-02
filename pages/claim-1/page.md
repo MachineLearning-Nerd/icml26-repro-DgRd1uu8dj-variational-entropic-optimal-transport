@@ -13,6 +13,6 @@ The negative control multiplies the analytic precision by `1.15`; it violates th
 - [Executable verifier](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/vareot_repro/claim1.py)
 - [Independent checker and failing control](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/vareot_repro/negative_control.py)
 - [Claim contract](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/.openresearch/artifacts/claim1/claim_contract.json)
-- [Raw run evidence](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/frozen_precision_run.json)
+- [Raw results](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim1/raw_results.json) · [checker output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim1/independent_checker_output.json) · [control output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim1/negative_control_output.json)
 
 **Limit.** The symbolic reduction addresses the general auxiliary identity; the numerical non-vacuity checks are continuous one-dimensional Gaussians, not an exhaustive numerical proof over distributions. Confidence: **HIGH**.

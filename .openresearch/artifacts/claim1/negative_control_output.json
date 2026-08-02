@@ -1,0 +1,1 @@
+{"control":"scale analytic precision q by 1.15","expected_exit_nonzero":true,"actual_exit_code":1,"passed":true,"failures":["shift_and_scale: primal=semidual","shift_and_scale: target variance","reverse_scale: primal=semidual","reverse_scale: target variance"]}

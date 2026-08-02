@@ -1,0 +1,10 @@
+{
+  "evidence_run_id": "0f29450d-5b73-4214-ae3e-10d47608a377",
+  "status": "VERIFIED",
+  "claim": "Theorem 3.3 generalized finite-measure KL identity",
+  "cases": [
+    {"name":"shift_and_scale","epsilon":0.7,"L_star":1.310923962731463,"L_f":1.256514557806393,"L_f_xi":1.1791516685666719,"candidate_total_mass":0.6205184131996018,"generalized_KL":0.1882461345211306,"gap_identity_abs_error":2.220446049250313e-16,"independent_checker_abs_error":0.0,"ordinary_KL_false_identity_abs_error":0.26563711076027896},
+    {"name":"reverse_scale","epsilon":1.1,"L_star":0.4307262849673188,"L_f":0.4003990141402183,"L_f_xi":0.32371381246616715,"candidate_total_mass":0.819713819703683,"generalized_KL":0.09728406591013838,"gap_identity_abs_error":5.828670879282072e-16,"independent_checker_abs_error":0.0,"ordinary_KL_false_identity_abs_error":0.19831479832594923}
+  ],
+  "symbolic_identity": "L*-L(f,xi)=epsilon*KL_generalized(pi*||pi_f,xi)"
+}

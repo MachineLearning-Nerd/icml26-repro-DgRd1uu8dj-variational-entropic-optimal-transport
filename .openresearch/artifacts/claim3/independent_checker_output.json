@@ -1,0 +1,1 @@
+{"passed":true,"proof_chain":["symmetrization bounds the two one-sided empirical-process terms","coordinatewise contraction controls the bounded quotient class","the compact Lipschitz-class theorem supplies n^-1/(D+1)","the Gaussian-smoothed partition theorem supplies n^-1/2","n^-1/2 <= n^-1/(D+1) for D>=1,n>=1"],"median_per_seed_slope":-0.5111585503734187}

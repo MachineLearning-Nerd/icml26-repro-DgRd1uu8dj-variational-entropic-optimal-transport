@@ -10,6 +10,6 @@ Repeating the same 32 observations produced slope `1.79e-15`, so the non-iid con
 
 - [Executable verifier](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/vareot_repro/claim3.py)
 - [Claim contract](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/.openresearch/artifacts/claim3/claim_contract.json)
-- [Raw values and uncertainty](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/frozen_precision_run.json)
+- [Raw values and uncertainty](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim3/raw_results.json) · [checker output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim3/independent_checker_output.json) · [control output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim3/negative_control_output.json)
 
 **Version warning.** arXiv v2 materially replaces this with a fixed clipped-network rate containing `N^-1/2`, `M^-1/2`, and `K^-1/2`. This page tests the v1 statement the judge scored. General validity rests on the reconstructed proof and cited primary theorems; the numerical route is a one-dimensional full-class calibration. Confidence: **MEDIUM**.

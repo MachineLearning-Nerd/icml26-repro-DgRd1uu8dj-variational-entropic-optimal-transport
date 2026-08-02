@@ -10,6 +10,6 @@ Increasing only the normalizer width while fixing insufficient potential-tail ca
 
 - [Executable ReLU verifier](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/vareot_repro/claim4.py)
 - [Claim contract](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/blob/main/.openresearch/artifacts/claim4/claim_contract.json)
-- [Raw capacity data](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/frozen_precision_run.json)
+- [Raw capacity data](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim4/raw_results.json) · [checker output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim4/independent_checker_output.json) · [control output](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj/resolve/main/.openresearch/artifacts/claim4/negative_control_output.json)
 
 **Version warning.** v2 renumbers this as Theorem 3.6 and changes the proof presentation. The capacity sweep is a scoped witness; the universal result rests on the reconstructed analytical certificate. Confidence: **MEDIUM**.
