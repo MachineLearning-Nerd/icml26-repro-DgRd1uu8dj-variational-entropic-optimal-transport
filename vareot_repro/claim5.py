@@ -133,26 +133,53 @@ def numpy_equation_checker(
     source, target, noise = batch
     with torch.no_grad():
         noisy = source[:, None, :] - sqrt(config.epsilon) * noise
-        f_noisy = potential(noisy.reshape(-1, config.dimension)).reshape(
+        f_noisy_tensor = potential(noisy.reshape(-1, config.dimension)).reshape(
             config.batch_size, config.monte_carlo_k
-        ).numpy()
-        f_target = potential(target).numpy()
-        xi_source = normalizer(source).numpy()
+        )
+        f_target_tensor = potential(target)
+        xi_source_tensor = normalizer(source)
         torch_loss, _ = vareot_loss(potential, normalizer, *batch, config)
+        exponent_tensor = torch.clamp(
+            f_noisy_tensor / config.epsilon - xi_source_tensor,
+            max=config.exponential_clip,
+        )
+        torch_float64_loss = config.epsilon * (
+            xi_source_tensor.to(torch.float64).mean()
+            + torch.exp(exponent_tensor.to(torch.float64)).mean()
+        ) - f_target_tensor.to(torch.float64).mean()
+    f_noisy = f_noisy_tensor.numpy()
+    f_target = f_target_tensor.numpy()
+    xi_source = xi_source_tensor.numpy()
     exponent = np.minimum(
         f_noisy / config.epsilon - xi_source,
         config.exponential_clip,
     )
-    numpy_loss = config.epsilon * (
-        float(np.mean(xi_source))
+    numpy_float64_loss = config.epsilon * (
+        float(np.mean(xi_source.astype(np.float64)))
         + float(np.mean(np.exp(exponent.astype(np.float64))))
-    ) - float(np.mean(f_target))
-    error = abs(float(torch_loss) - numpy_loss)
+    ) - float(np.mean(f_target.astype(np.float64)))
+    float64_error = abs(float(torch_float64_loss) - numpy_float64_loss)
+    mixed_precision_error = abs(float(torch_loss) - float(torch_float64_loss))
+    condition_scale = config.epsilon * (
+        abs(float(xi_source_tensor.to(torch.float64).mean()))
+        + abs(float(torch.exp(exponent_tensor.to(torch.float64)).mean()))
+    ) + abs(float(f_target_tensor.to(torch.float64).mean()))
+    roundoff_bound = (
+        8 * float(torch.finfo(torch.float32).eps) * max(1.0, condition_scale)
+    )
+    passed = bool(
+        float64_error <= 1e-12 and mixed_precision_error <= roundoff_bound
+    )
     return {
-        "torch_minimized_loss": float(torch_loss),
-        "numpy_minimized_loss": numpy_loss,
-        "absolute_error": error,
-        "passed": error <= 2e-7,
+        "torch_training_mixed_precision_loss": float(torch_loss),
+        "torch_float64_aggregation_loss": float(torch_float64_loss),
+        "numpy_float64_aggregation_loss": numpy_float64_loss,
+        "torch_numpy_float64_absolute_error": float64_error,
+        "training_to_float64_absolute_error": mixed_precision_error,
+        "condition_scale": condition_scale,
+        "float32_machine_epsilon": float(torch.finfo(torch.float32).eps),
+        "roundoff_bound_8_epsilon_times_scale": roundoff_bound,
+        "passed": passed,
     }
 
 

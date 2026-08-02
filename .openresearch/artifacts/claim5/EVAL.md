@@ -1,3 +1,3 @@
 # Claim 5 evaluation contract
 
-Run the inherited command `uv sync --frozen && .venv/bin/python -m vareot_repro.run_all` on HF `cpu-upgrade`. The frozen parent measured `1.34562` seconds per step at the exact tensor shape and projected `6728.08` training seconds. This node changes only committed `steps=5000`, `profile_only=false`, and the CPU estimate, then reruns Claims 1–4 and the final Claim 5 gate.
+Run the inherited command `uv sync --frozen && .venv/bin/python -m vareot_repro.run_all` on HF `cpu-upgrade`. The frozen full-run parent completed the exact schedule but exposed an unscaled absolute checker tolerance. This child preserves the complete training configuration and separates exact float64 equation agreement from the a priori mixed-precision bound `8 * float32_epsilon * condition_scale`, then reruns Claims 1–4 and Claim 5.

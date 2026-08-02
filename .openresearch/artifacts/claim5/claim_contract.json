@@ -13,5 +13,5 @@
   ],
   "quantifiers": "Every training iteration described by Algorithm 1 uses those three sampling sources, computes Equation 15, and updates both parameter sets; no current-plan simulation is part of training.",
   "profile_gate": "The diagnostic child preserves official tensor scale and measures exact CPU cost over 20 steps. It cannot produce a final VERIFIED verdict.",
-  "final_gate": "The descendant must complete 5000 official-notebook steps, improve a fixed held-out Equation 15 objective by more than 0.02, update both networks, pass an independent NumPy equation checker, and reject a detached-potential control."
+  "final_gate": "The descendant must complete 5000 official-notebook steps, improve a fixed held-out Equation 15 objective by more than 0.02, update both networks, match the independent NumPy Equation 15 aggregation within 1e-12 in float64, keep the actual mixed-precision reduction error below 8*float32_epsilon*condition_scale, and reject a detached-potential control."
 }
