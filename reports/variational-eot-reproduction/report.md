@@ -82,7 +82,9 @@ The frozen environment is Python 3.12, NumPy 2.3.2, SciPy 1.16.1, Torch 2.8.0+cp
 
 ## Experiment tree and commands
 
-The tree descends through one decision at a time: exact baseline → theorem certificates → Algorithm 1 CPU profile → full training → precision-certified full training → evaluator-visible release gate. The winning scientific branch is `orx/precision-certified-algorithm-1`, commit `7ee3d8e5e21f4f59fd5025e3c2df8f80f584db86`.
+The tree descends through one decision at a time: exact baseline → theorem certificates → Algorithm 1 CPU profile → full training → precision-certified full training → evaluator-visible release gate → pinned-marimo release validation. The winning scientific branch is `orx/precision-certified-algorithm-1`, commit `7ee3d8e5e21f4f59fd5025e3c2df8f80f584db86`; the final packaging branch is `orx/pinned-marimo-release-validation`, commit `e3ea13f631fc74ba3e178126f613693995e4401c`.
+
+The final packaging run reproduced all five scientific verdicts and passed its complete release gate in `21,440.44s`. The outer HF job then reached its `5h58m` timeout after printing that final certificate; its infrastructure status is therefore `failed`, while the evaluator-visible scientific and packaging checks are complete in the immutable log. This distinction is preserved rather than relabeling the infrastructure status as success.
 
 Every formal node used exactly:
 
