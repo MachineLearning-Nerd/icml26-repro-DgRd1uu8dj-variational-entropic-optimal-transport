@@ -1,0 +1,23 @@
+{
+  "claim_id": "claim3_theorem_3_5_v1",
+  "claim_text": "For bounded Lipschitz classes on compact D-dimensional supports, the expected estimation error is O(N^{-1/(D+1)}) + O(M^{-1/(D+1)}).",
+  "source": {
+    "version": "arXiv:2602.02241v1, matching the cached ar5iv and judged claim",
+    "pdf_sha256": "ecadaf4fc32e8b88bff8d57910a6bc291bfa36bd9c4ad61df4d505783b3f66a8",
+    "anchors": ["Theorem 3.5", "Equation 18", "Appendix A.5"]
+  },
+  "assumptions": [
+    "compact X0 and X1 in R^D",
+    "uniformly bounded and Lipschitz f and xi classes",
+    "independent iid samples from p0 and p1",
+    "fixed positive epsilon and finite class constants"
+  ],
+  "quantifiers": "The expectation over iid empirical samples obeys the asymptotic upper rate with instance-dependent constants.",
+  "machine_checks": [
+    "reconstruct the symmetrization, contraction, and referenced Rademacher-rate proof chain",
+    "verify algebraically that the n^{-1/2} partition term is dominated by the stated rate",
+    "calibrate the full one-dimensional 1-Lipschitz class through exact Wasserstein-1 duality over 128 iid seeds",
+    "reject repeated non-iid observations"
+  ],
+  "failure_policy": "A broken proof implication, calibrated slope outside [-0.65,-0.35], or unrejected non-iid control makes the verifier exit nonzero."
+}

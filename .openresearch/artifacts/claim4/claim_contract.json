@@ -1,0 +1,24 @@
+{
+  "claim_id": "claim4_theorem_3_7_v1",
+  "claim_text": "The approximation error over bounded Lipschitz neural-network classes vanishes as capacity grows, under universal approximation on compact supports.",
+  "source": {
+    "version": "arXiv:2602.02241v1, matching the judged Theorem 3.7 claim",
+    "pdf_sha256": "ecadaf4fc32e8b88bff8d57910a6bc291bfa36bd9c4ad61df4d505783b3f66a8",
+    "anchors": ["Theorem 3.7", "Equation 19", "Appendix A.6"]
+  },
+  "assumptions": [
+    "compact supports X0 and X1",
+    "the weak-dual optimizer exists in the admissible class",
+    "the union of increasing neural classes is dense in the required continuous bounded Lipschitz functions",
+    "epsilon is positive"
+  ],
+  "quantifiers": "For every admissible compact-support problem and every positive tolerance, sufficiently expressive classes make the best variational objective gap smaller than that tolerance.",
+  "machine_checks": [
+    "reconstruct the universal-approximation and continuity proof",
+    "construct an absolutely continuous compact EOT instance with known weak-dual optimizer",
+    "represent capacity-growing tail potentials exactly by ReLU networks and normalizers by ReLU splines",
+    "independently integrate the target marginal and objectives",
+    "reject xi width growth when the potential tail capacity is fixed"
+  ],
+  "failure_policy": "Invalid marginal normalization, negative objective gap, final gap above 0.01, inadequate gap reduction, network mismatch, or surviving control makes the verifier exit nonzero."
+}

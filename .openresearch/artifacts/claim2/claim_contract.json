@@ -1,0 +1,23 @@
+{
+  "claim_id": "claim2_theorem_3_3",
+  "claim_text": "epsilon KL(pi* || pi_f,xi) = L* - L(f,xi), with KL interpreted for finite non-normalized measures as in Definition A.1.",
+  "source": {
+    "url": "https://ar5iv.labs.arxiv.org/html/2602.02241",
+    "retrieved_utc": "2026-08-02T03:20:39Z",
+    "sha256": "50f2161eea8428c71e455b7412cd020157a3450f7c60dd6271a8bfe6c6f08261",
+    "anchors": ["#S3.Thmtheorem3", "Equation 14", "Definition A.1"]
+  },
+  "assumptions": [
+    "the EOT optimizer pi* and candidate finite measure pi_f,xi are mutually absolutely continuous where required",
+    "the generalized KL and objectives are finite",
+    "p0 and p1 are absolutely continuous probabilities and epsilon is positive"
+  ],
+  "quantifiers": "For every admissible candidate pair (f,xi), the exact objective gap is epsilon times generalized KL; its normalized xi_f specialization is ordinary probability KL.",
+  "machine_checks": [
+    "derive the Radon-Nikodym ratio and finite-measure mass correction",
+    "evaluate a non-optimal quadratic f and nonconstant xi shift on two continuous Gaussian EOT instances",
+    "independently integrate the conditional KL and candidate mass",
+    "reject the ordinary-KL formula when the candidate is deliberately unnormalized"
+  ],
+  "failure_policy": "Any identity error above 1e-10, failed independent integral, or surviving negative control makes the cumulative verifier exit nonzero."
+}

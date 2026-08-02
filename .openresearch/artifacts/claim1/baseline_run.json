@@ -1,0 +1,17 @@
+{
+  "run_id": "00f0c791-19f1-4da1-a02d-07cc8bc60ad1",
+  "git_sha": "03460f11bc71d2d71a89d955d6ecb6bfa2db8d30",
+  "command": "uv sync --frozen && .venv/bin/python -m vareot_repro.run_all",
+  "backend": "hf",
+  "flavor": "cpu-upgrade",
+  "image": "ghcr.io/astral-sh/uv:python3.12-bookworm-slim",
+  "estimated_cores_required": 2,
+  "actual_cpu_affinity_count": 64,
+  "torch_threads": 32,
+  "cuda_available": false,
+  "scientific_runtime_seconds": 0.7134815280000169,
+  "wall_runtime_seconds": 26,
+  "status": "VERIFIED",
+  "maximum_reported_identity_error": 4.440892098500626e-16,
+  "negative_control_exit_code": 1
+}
