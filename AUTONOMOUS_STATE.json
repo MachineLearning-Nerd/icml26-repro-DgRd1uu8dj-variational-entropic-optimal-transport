@@ -23,7 +23,7 @@
     "5": 1
   },
   "last_checkpoint": "2026-08-13T00:00:00Z",
-  "last_known_git_commit": "96aa3a3",
+  "last_known_git_commit": "81ac0d7",
   "publication_allowed": true,
   "compute_policy": "historical HF cpu-upgrade evidence only; no new remote, paid, or GPU rerun without explicit authorization",
   "former_repository": "icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport",
