@@ -16,7 +16,7 @@ def _(mo):
         r"""
         # Variational Entropic Optimal Transport: an evidence-first tutorial
 
-        ![Five reproduced claim contracts](https://raw.githubusercontent.com/MachineLearning-Nerd/icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport/main/reports/variational-eot-reproduction/images/headline.svg)
+        ![Five reproduced claim contracts](https://raw.githubusercontent.com/MachineLearning-Nerd/icml26-variational-entropic-optimal-transport/main/reports/variational-eot-reproduction/images/headline.svg)
 
         This notebook explains the central idea of arXiv:2602.02241 using the
         already-produced reproduction evidence. It never reruns the 5,000-step
@@ -110,7 +110,7 @@ def _(mo):
 def _(mo):
     mo.md(
         r"""
-        ![Algorithm 1 training](https://raw.githubusercontent.com/MachineLearning-Nerd/icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport/main/reports/variational-eot-reproduction/images/training.svg)
+        ![Algorithm 1 training](https://raw.githubusercontent.com/MachineLearning-Nerd/icml26-variational-entropic-optimal-transport/main/reports/variational-eot-reproduction/images/training.svg)
 
         ## Read or reproduce
 
@@ -120,8 +120,8 @@ def _(mo):
         uv sync --frozen && .venv/bin/python -m vareot_repro.run_all
         ```
 
-        See the [illustrated report](https://github.com/MachineLearning-Nerd/icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport/blob/main/reports/variational-eot-reproduction/report.md),
-        [raw evidence](https://github.com/MachineLearning-Nerd/icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport/blob/main/.openresearch/artifacts/frozen_precision_run.json),
+        See the [illustrated report](https://github.com/MachineLearning-Nerd/icml26-variational-entropic-optimal-transport/blob/main/reports/variational-eot-reproduction/report.md),
+        [raw evidence](https://github.com/MachineLearning-Nerd/icml26-variational-entropic-optimal-transport/blob/main/.openresearch/artifacts/frozen_precision_run.json),
         and [current evaluator page](https://huggingface.co/spaces/DineshAI/DgRd1uu8dj).
 
         The best-supported possible score is **10/10 as a forecast**, with a

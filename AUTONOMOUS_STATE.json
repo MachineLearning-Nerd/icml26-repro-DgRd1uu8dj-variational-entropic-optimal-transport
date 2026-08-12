@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "paper": "arXiv:2602.02241",
+  "openreview_id": "DgRd1uu8dj",
+  "phase": "published_and_verified",
+  "next_action": "select_next_repository_and_repeat_the_audit_workflow",
+  "active_run_ids": [],
+  "completed_milestones": [
+    "source_versions_and_claim_contracts_present",
+    "claims_1_to_5_scientific_evidence_present",
+    "claim_ledger_written",
+    "version_boundary_recorded",
+    "branch_audit_written",
+    "repository_renamed_and_history_normalized",
+    "remote_branch_cleanup_verified"
+  ],
+  "failed_attempts": [],
+  "claim_attempt_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "last_checkpoint": "2026-08-13T00:00:00Z",
+  "last_known_git_commit": "96aa3a3",
+  "publication_allowed": true,
+  "compute_policy": "historical HF cpu-upgrade evidence only; no new remote, paid, or GPU rerun without explicit authorization",
+  "former_repository": "icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport",
+  "target_repository": "icml26-variational-entropic-optimal-transport",
+  "canonical_branch": "main",
+  "historical_remote_branch_count": 8,
+  "claim_statuses": {
+    "1": "VERIFIED_HIGH",
+    "2": "VERIFIED_HIGH",
+    "3": "VERIFIED_MEDIUM_V1_CONTRACT",
+    "4": "VERIFIED_MEDIUM_V1_CONTRACT",
+    "5": "VERIFIED_HIGH"
+  }
+}
