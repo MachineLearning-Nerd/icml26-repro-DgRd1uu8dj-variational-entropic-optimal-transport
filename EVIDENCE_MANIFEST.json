@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-variational-entropic-optimal-transport",
+  "source": {
+    "paper": "https://arxiv.org/abs/2602.02241",
+    "arxiv_v1_sha256": "ecadaf4fc32e8b88bff8d57910a6bc291bfa36bd9c4ad61df4d505783b3f66a8",
+    "arxiv_v2_sha256": "257689c36d4d589942660667e880211ab18c6de37d9c643adacd571beaf1949b",
+    "ar5iv_sha256": "50f2161eea8428c71e455b7412cd020157a3450f7c60dd6271a8bfe6c6f08261"
+  },
+  "required_audit_files": [
+    "README.md",
+    "STATUS.md",
+    "AUTONOMOUS_STATE.json",
+    "branch-audit.md",
+    "CLAIM_EVIDENCE.md",
+    "SOURCE_AUDIT.md",
+    "BRANCH_AUDIT.md",
+    "ENVIRONMENT.md",
+    "REPORT.md",
+    "AUTHOR_THANK_YOU.md",
+    "CITATION.cff",
+    "claims.json",
+    "EVIDENCE_MANIFEST.json",
+    "verify_final.py"
+  ],
+  "claim_statuses": {
+    "C1": "VERIFIED",
+    "C2": "VERIFIED",
+    "C3": "VERIFIED",
+    "C4": "VERIFIED",
+    "C5": "VERIFIED"
+  },
+  "content_addressed_artifacts": [
+    {"path": "logbook.json", "sha256": "c550d993630338433c0692eaab0bbdc871311089c1a55ff051636c7dde0ff5df"},
+    {"path": "pages/current/page.md", "sha256": "12836550caf39d824a3d7d9ebed7dcfb87b7d37b063aa7d3e5eed7df190ab253"},
+    {"path": "vareot_repro/run_all.py", "sha256": "71fd2b567071135872e4f93a7cd82299d80bc6391259b9588a8946aae902d0e3"},
+    {"path": ".openresearch/artifacts/frozen_precision_run.json", "sha256": "69481b4e4bf0099679598ba4d5e73d582683206b8cbb44ef38cbd56ec70f44a4"},
+    {"path": ".openresearch/artifacts/claim1/raw_results.json", "sha256": "c11b2b19725e86f99d913c64543a03a26800e70ac12d8edff501861b77fe0e4a"},
+    {"path": ".openresearch/artifacts/claim1/independent_checker_output.json", "sha256": "a29593a6c2ec29f9e6304c6fe5173e8e3715fb223f10e43e2c229a75f31174b3"},
+    {"path": ".openresearch/artifacts/claim1/negative_control_output.json", "sha256": "bc97528fb6a74542dc838cdb97bcc5624c1e696aa23c69621f10a7fae4998690"},
+    {"path": ".openresearch/artifacts/claim2/raw_results.json", "sha256": "ec6f37530421a12035cdd153b1bcdc003b62cfd4632521f88cfa6ca0d575c5f7"},
+    {"path": ".openresearch/artifacts/claim2/independent_checker_output.json", "sha256": "a4d4a7e94c597f208d6a7631c990f6a2b6f29b18f8328a5aff51dfbfeb1a9745"},
+    {"path": ".openresearch/artifacts/claim2/negative_control_output.json", "sha256": "3ef6a0be7fe2e68cc0eea4c9d9d261324fe759dfd9b05eda830dc89297c87f22"},
+    {"path": ".openresearch/artifacts/claim3/raw_results.json", "sha256": "0ddafb3d047c2df4431fd4c3aea6091286de59bb7e796d58b6163e338b52b7d3"},
+    {"path": ".openresearch/artifacts/claim3/independent_checker_output.json", "sha256": "8c574f51b64f7b1ea22e41e986ddeced2f345e58e861e0ec9d343dce45a2b8c2"},
+    {"path": ".openresearch/artifacts/claim3/negative_control_output.json", "sha256": "cab57cad87be5f568134ef22560d69eb7b8cbab26a69c2c1dbc4bc817b15920e"},
+    {"path": ".openresearch/artifacts/claim4/raw_results.json", "sha256": "aad37f014a8cd7ee8be6f7def620041bde876a2d5c9d8d8de2a904ce1e4aa3da"},
+    {"path": ".openresearch/artifacts/claim4/independent_checker_output.json", "sha256": "602a2ad4bfd376e7364dea4f3858540d10ca6ca1b536985a0d915d14b762ae5e"},
+    {"path": ".openresearch/artifacts/claim4/negative_control_output.json", "sha256": "c95b99ecbc906e345af742eb6a7b9e19467f10d6d532d0b3dbdacce836fc1c0d"},
+    {"path": ".openresearch/artifacts/claim5/raw_results.json", "sha256": "226c2fad1cb8088c3bef80a39e6b1a6fe3256fc2a434ebbb65850b662e0e7faf"},
+    {"path": ".openresearch/artifacts/claim5/independent_checker_output.json", "sha256": "c5ac4978fbd3e76dd84ff348be0642d2821668eb6da21286a2e04007d7af6bc2"},
+    {"path": ".openresearch/artifacts/claim5/negative_control_output.json", "sha256": "372eaa9493e0a49e88da2308bbbe2ed2e5a1cb6b32198814cc0712fb838e45ea"},
+    {"path": ".openresearch/artifacts/claim5/training_trace.csv", "sha256": "e89c2abac424b4f62fe2821b08a3836466736631a6f07cae3506ba7bd9cd44b5"},
+    {"path": "publication_allowlist.txt", "sha256": "71cc1258e52149260b66176e32ff3a863506526860bd361cb7cdab0e5ee0c56c"}
+  ]
+}

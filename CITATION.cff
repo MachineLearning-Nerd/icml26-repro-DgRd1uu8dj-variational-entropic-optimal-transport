@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+title: "Variational Entropic Optimal Transport — ICML 2026 reproduction audit"
+message: "If you use this audit, please cite the paper and the repository."
+type: software
+authors:
+  - family-names: Dyachenko
+    given-names: Roman
+  - family-names: Gushchin
+    given-names: Nikita
+  - family-names: Sokolov
+    given-names: Kirill
+  - family-names: Mokrov
+    given-names: Petr
+  - family-names: Burnaev
+    given-names: Evgeny
+  - family-names: Korotin
+    given-names: Alexander
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-variational-entropic-optimal-transport"
+repository-artifact: "https://arxiv.org/abs/2602.02241"
+abstract: "Independent claim-by-claim reproduction audit for Variational Entropic Optimal Transport, with explicit arXiv v1/v2 contract boundaries."
+keywords:
+  - optimal transport
+  - entropic optimal transport
+  - reproducibility
+  - ICML 2026
+license: MIT
+preferred-citation:
+  type: article
+  title: "Variational Entropic Optimal Transport"
+  authors:
+    - family-names: Dyachenko
+      given-names: Roman
+    - family-names: Gushchin
+      given-names: Nikita
+    - family-names: Sokolov
+      given-names: Kirill
+    - family-names: Mokrov
+      given-names: Petr
+    - family-names: Burnaev
+      given-names: Evgeny
+    - family-names: Korotin
+      given-names: Alexander
+  year: 2026
+  journal: "arXiv preprint arXiv:2602.02241"
+  doi: "10.48550/arXiv.2602.02241"

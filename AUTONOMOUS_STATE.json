@@ -12,7 +12,9 @@
     "version_boundary_recorded",
     "branch_audit_written",
     "repository_renamed_and_history_normalized",
-    "remote_branch_cleanup_verified"
+    "remote_branch_cleanup_verified",
+    "canonical_identity_normalized",
+    "audit_dossier_written"
   ],
   "failed_attempts": [],
   "claim_attempt_counts": {
@@ -22,13 +24,29 @@
     "4": 1,
     "5": 1
   },
-  "last_checkpoint": "2026-08-13T00:00:00Z",
-  "last_known_git_commit": "81ac0d7",
+  "last_checkpoint": "2026-08-17T00:00:00Z",
+  "last_known_git_commit": "e4209f4480539763fb53dfd1cf0398227dd19030",
   "publication_allowed": true,
   "compute_policy": "historical HF cpu-upgrade evidence only; no new remote, paid, or GPU rerun without explicit authorization",
   "former_repository": "icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport",
   "target_repository": "icml26-variational-entropic-optimal-transport",
   "canonical_branch": "main",
+  "canonical_identity": {
+    "name": "MachineLearning-Nerd",
+    "email": "MachineLearning-Nerd@users.noreply.github.com"
+  },
+  "audit_dossier": {
+    "claim_evidence": "CLAIM_EVIDENCE.md",
+    "source_audit": "SOURCE_AUDIT.md",
+    "branch_audit": "BRANCH_AUDIT.md",
+    "environment": "ENVIRONMENT.md",
+    "report": "REPORT.md",
+    "citation": "CITATION.cff",
+    "author_thank_you": "AUTHOR_THANK_YOU.md",
+    "claims": "claims.json",
+    "evidence_manifest": "EVIDENCE_MANIFEST.json",
+    "verifier": "verify_final.py"
+  },
   "historical_remote_branch_count": 8,
   "claim_statuses": {
     "1": "VERIFIED_HIGH",

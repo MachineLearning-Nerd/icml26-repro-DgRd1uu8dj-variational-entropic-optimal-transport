@@ -22,6 +22,23 @@ This repository replaces the earlier grid-discretized smoke test with continuous
 | Former repository name | icml26-repro-DgRd1uu8dj-variational-entropic-optimal-transport |
 | Canonical branch | main |
 
+## Standardized audit dossier
+
+The paper-first audit is split into small, reviewable records:
+
+| Record | Purpose |
+| --- | --- |
+| [CLAIM_EVIDENCE.md](CLAIM_EVIDENCE.md) | Claim contracts, producers, controls, evidence paths, verdicts, and scope boundaries |
+| [SOURCE_AUDIT.md](SOURCE_AUDIT.md) | Paper versions, source hashes, OpenReview record, and official implementation provenance |
+| [BRANCH_AUDIT.md](BRANCH_AUDIT.md) | Final branch policy and the purpose/outcome of every retired branch |
+| [ENVIRONMENT.md](ENVIRONMENT.md) | Fixed command, pinned environment, run provenance, and compute boundary |
+| [REPORT.md](REPORT.md) | Scientific interpretation, limitations, and publication boundary |
+| [CITATION.cff](CITATION.cff) | Machine-readable paper citation |
+| [AUTHOR_THANK_YOU.md](AUTHOR_THANK_YOU.md) | Thank-you note to the paper authors |
+| [claims.json](claims.json) | Machine-readable claim ledger |
+| [EVIDENCE_MANIFEST.json](EVIDENCE_MANIFEST.json) | Hash-pinned evidence and required audit records |
+| [verify_final.py](verify_final.py) | Fail-closed final-state verifier; it does not rerun the expensive training job |
+
 The reproduction uses the paper's public theorem statements and the executable Swiss-roll notebook configuration recorded in the source audit. This repository is an independent implementation and verification record, not an official author code release.
 
 ## What the paper is doing
@@ -85,6 +102,8 @@ Start with [Current verification](pages/current/page.md), then read [Claim 1](pa
 ## Branch policy
 
 The normalized public repository uses one stable branch: main. The former orx/* and publication/* names were experiment or release labels, not public interfaces. Every former branch tip was an ancestor of the pre-normalization main tip, so retiring those pointers preserves the complete history through main. Their purposes and outcomes are recorded in [branch-audit.md](branch-audit.md).
+
+The normalized history uses `MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>` as both author and committer for every reachable commit. The older numeric noreply identity was rewritten with a recovery bundle preserved before publication.
 
 ## Citation
 

@@ -13,6 +13,8 @@ Canonical branch: main
 Current phase: published_and_verified
 Publication status: normalized repository published and remote branch cleanup verified; no new scientific run was started for cleanup
 Compute policy: historical evidence used Hugging Face cpu-upgrade with no GPU; no new remote, paid, or GPU run is authorized by this cleanup
+Standardized dossier: claim, source, branch, environment, report, citation, author-thanks, manifest, and final-verifier records are published in the repository root
+Canonical attribution: MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com> for every reachable commit
 
 Source pins:
 
@@ -22,6 +24,7 @@ Source pins:
 - ar5iv retrieval time: 2026-08-02T03:20:39Z
 - canonical scientific evidence revision: 7ee3d8e5e21f4f59fd5025e3c2df8f80f584db86
 - canonical scientific run: 0f29450d-5b73-4214-ae3e-10d47608a377
+- official implementation current main pin observed 2026-08-17: DrEternity/VarEOT@fd1b2f93e1b5606feafaf46e34da61066c844e83
 
 Claim status:
 
@@ -32,3 +35,5 @@ Claim status:
 - Claim 5 / Algorithm 1: VERIFIED, high confidence; objective improvement 1.214509 and zero model-distribution samples
 
 The current main branch contains the latest publication surface. Eight historical experiment or release branch pointers are documented in branch-audit.md and are retired after the audit is committed. The historical judged artifact remains under historical/judged-7b762ad.
+
+The standardized final-state verifier checks the normalized branch/ref layout, canonical commit identities, claim statuses, selected evidence hashes, publication manifest, and dossier completeness without rerunning the expensive scientific job.

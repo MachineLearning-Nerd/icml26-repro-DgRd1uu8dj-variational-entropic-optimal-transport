@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "paper": "arXiv:2602.02241",
+  "openreview_id": "DgRd1uu8dj",
+  "repository": "MachineLearning-Nerd/icml26-variational-entropic-optimal-transport",
+  "claims": [
+    {
+      "id": "C1",
+      "paper_anchor": "Theorem 3.2",
+      "paper_version": "v2",
+      "status": "VERIFIED",
+      "confidence": "HIGH",
+      "producer": ["vareot_repro/claim1.py", "vareot_repro/run_all.py"],
+      "evidence": [
+        ".openresearch/artifacts/claim1/raw_results.json",
+        ".openresearch/artifacts/claim1/independent_checker_output.json",
+        ".openresearch/artifacts/claim1/negative_control_output.json"
+      ],
+      "headline": "Continuous and quadrature agreement errors are at machine precision; wrong-potential control exits 1."
+    },
+    {
+      "id": "C2",
+      "paper_anchor": "Theorem 3.3",
+      "paper_version": "v2",
+      "status": "VERIFIED",
+      "confidence": "HIGH",
+      "producer": ["vareot_repro/claim2.py", "vareot_repro/run_all.py"],
+      "evidence": [
+        ".openresearch/artifacts/claim2/raw_results.json",
+        ".openresearch/artifacts/claim2/independent_checker_output.json",
+        ".openresearch/artifacts/claim2/negative_control_output.json"
+      ],
+      "headline": "Generalized-KL identity error is 5.83e-16; ordinary-KL controls are rejected."
+    },
+    {
+      "id": "C3",
+      "paper_anchor": "Theorem 3.5",
+      "paper_version": "v1 judged contract",
+      "status": "VERIFIED",
+      "confidence": "MEDIUM",
+      "producer": ["vareot_repro/claim3.py", "vareot_repro/run_all.py"],
+      "evidence": [
+        ".openresearch/artifacts/claim3/raw_results.json",
+        ".openresearch/artifacts/claim3/independent_checker_output.json",
+        ".openresearch/artifacts/claim3/negative_control_output.json"
+      ],
+      "headline": "Complete one-dimensional anchored Lipschitz calibration gives median slope -0.511; repeated-data control is flat."
+    },
+    {
+      "id": "C4",
+      "paper_anchor": "Theorem 3.7",
+      "paper_version": "v1 judged contract",
+      "status": "VERIFIED",
+      "confidence": "MEDIUM",
+      "producer": ["vareot_repro/claim4.py", "vareot_repro/run_all.py"],
+      "evidence": [
+        ".openresearch/artifacts/claim4/raw_results.json",
+        ".openresearch/artifacts/claim4/independent_checker_output.json",
+        ".openresearch/artifacts/claim4/negative_control_output.json"
+      ],
+      "headline": "Explicit ReLU capacity witnesses reduce the gap from 0.022732 to 0.000352; fixed-tail control is rejected."
+    },
+    {
+      "id": "C5",
+      "paper_anchor": "Algorithm 1",
+      "paper_version": "v2",
+      "status": "VERIFIED",
+      "confidence": "HIGH",
+      "producer": ["vareot_repro/claim5.py", "vareot_repro/run_all.py"],
+      "evidence": [
+        ".openresearch/artifacts/claim5/raw_results.json",
+        ".openresearch/artifacts/claim5/independent_checker_output.json",
+        ".openresearch/artifacts/claim5/negative_control_output.json",
+        ".openresearch/artifacts/claim5/training_trace.csv"
+      ],
+      "headline": "The 5,000-step executable training schedule uses 0 current-model samples and updates both networks."
+    }
+  ]
+}

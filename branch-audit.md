@@ -16,4 +16,4 @@ Before normalization, this repository had one publication branch and eight remot
 
 The orx/* and publication/* names were generated experiment or release labels, not stable public APIs. The normalized public surface uses only main; claim pages, raw evidence, commit history, and this audit preserve the decision path and outcomes.
 
-Before normalization, the branch tips used the local Dinesh identity. The final history rewrite sets both author and committer to MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com> for every reachable commit.
+Before normalization, the branch tips used the numeric MachineLearning-Nerd noreply identity. The final history rewrite sets both author and committer to MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com> for every reachable commit.
